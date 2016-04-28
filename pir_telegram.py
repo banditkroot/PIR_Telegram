@@ -23,7 +23,7 @@ upvideo = ChatAction.UPLOAD_VIDEO
 chatid = 'none'
 job = None
 camera = picamera.PiCamera()
-#Ajuster les aramère de caméra ici
+#Ajuster les paramètres de caméra ici
 camera.resolution = (1280, 720)
 camera.framerate = 25
 camera.rotation = 180
@@ -33,7 +33,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 def utilisateur(user):
-#Modifier les noms d'utilisateur pour votre bot
+#Modifier les noms d'utilisateurs pour votre bot
 	if (user == "utilisateur 1" or user == "utilisateur 2"):
 		return True
 	else:
