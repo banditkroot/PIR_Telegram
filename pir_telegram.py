@@ -70,7 +70,7 @@ def quitter(bot, update):
 
 def alarme(bot):
 	global previous_state, current_state, service
-	if (not camera.recording):
+	if (service == "en" and not camera.recording):
 		previous_state = current_state
 		current_state = GPIO.input(sensor)
 		if (current_state != previous_state):
