@@ -26,7 +26,7 @@ Pour cela il suffit de modifier le fichier /etc/rc.local
 ```shell
 sudo nano /etc/rc.local
 ```
-Ensuite ajouter simplement ces deux ligner dans le fichier avant la ligne exit 0 en fin de fichier.
+Ensuite ajouter simplement ces deux lignes dans le fichier avant la ligne exit 0 en fin de fichier.
 ```bash
 printf "Demarrage alarme Telegram-PIR.\n"
 python /home/pi/pir_telegram.py &
